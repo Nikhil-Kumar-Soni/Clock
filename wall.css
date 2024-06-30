@@ -1,0 +1,283 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #908d8d;
+}
+.container{
+  width: 500px;
+  height: 584px;
+  border-radius: 50%;
+  border: 20px sodid blueviolet;
+  margin: 0 auto;
+  position: relative;
+   box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.87),
+  10px 10px 70px rgba(0, 0, 0, 0.25),
+  inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+  inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  background: rgb(56, 56, 56);
+  min-height: 500px;
+  border-radius: 20px;
+  border-top-left-radius: 225px;
+  border-top-right-radius: 225px;
+ 
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+} 
+
+.clock{
+  position: relative;
+  width: 380px;
+  height: 380px;
+  background: #2f363e;
+  border-radius: 50%;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75), 10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 57px;
+} 
+
+.clock::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #706a6a;
+  border: 3px solid #b7f8fb;
+  border-radius: 50px;
+  z-index: 10000;
+}  
+
+
+.hour{
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e5fac2;
+}
+.brand{
+    position:relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #7f8183;
+    top: -60px;
+
+}
+.hour-1{
+  top:22px;
+  right: 110px;
+}
+.hour-2{
+  top: 90px;
+  right: 48px;
+}
+
+.hour-3{
+  top: 162px;
+  right:29px;
+}
+.hour-4{
+  top: 246px;
+  right: 53px;
+}
+.hour-5{
+  top: 302px;
+  right: 109px;
+}
+
+.hour-6{
+  top: 322px;
+  right:184pxpx;
+  }
+  .hour-7{
+    top: 296px;
+    right: 266px;
+  }
+  .hour-8{
+    top: 240px;
+    right: 319px;
+  }
+  .hour-9{
+    top: 160px;
+    left: 24px;
+  }
+  .hour-10{
+    top: 91px;
+    right: 313px;
+  }
+  .hour-11{
+    top: 32px;
+    right: 257px;
+  }
+  .hour-12{
+    top: 5px;
+    right: 180px;
+  }
+
+  .min-hand-wrap{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 115px;
+    left: 115px;
+  }
+
+.min-hand{
+  position: relative;
+}
+
+.min-hand .hand{
+  width:2px;
+  height: 120px;
+  background-color: #fee800;
+  position: absolute;
+  left: 75px;
+  top: -47px;
+
+}
+
+
+.min-hand .arrow{
+  font-size: 2px;
+  font-weight: bold;
+  color: #fee800;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 95px;
+  top: -8px;
+}
+
+.hr-hand-wrap{
+ width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 149px;
+  left: 149px;
+}
+
+
+.hr-hand{
+position: relative;
+}
+
+.hr-hand .hand{
+  width: 5px;
+  height: 58px;
+  background-color: #f60707;
+  position: absolute;
+  left: 50px;
+  top: -8px;
+
+}
+
+
+.hr-hand .arrow{
+  font-size: 17px;
+  font-weight: bold;
+  color: #f60707;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 95px;
+  top: -10px;
+}
+
+
+.sc-hand-wrap{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 76px;
+  left: 88px;
+}
+
+
+.sc-hand{
+position: relative;
+}
+
+.sc-hand .hand{
+  width: 0.1px;
+  height: 120px;
+  background-color: #04fc43;
+  position: absolute;
+  top:-13px;
+  left: 100px;
+}
+
+
+.sc-hand .arrow{
+    font-size: 0px;
+    font-weight: bold;
+    color: #04fc43;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 95px;
+    top: -10px;
+}
+
+
+/* for digital clock */
+
+.digital{
+  /* background-color: #aeecf1; */
+  color:#afcae2;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dig-cnt{
+  position: relative;
+  top: -22px;
+  /* right: 38px; */
+  left: 0px;
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 40px;
+  /* display: flex; */
+  padding: 10px 20px;
+  border: 2px solid rgba(0 , 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+  inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+/* for calander */
+
+
+.digital-calendar {
+  
+    display: flex;
+    position: relative;
+    border-radius: 21px;
+    box-shadow: 5px 5px 10px rgba(16, 16, 16, 0.5),
+     inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 496px;
+    height: 72px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    top: -57px;
+    left: 0px;
+}
+
+.date {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #afcae2;
+  position: relative;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

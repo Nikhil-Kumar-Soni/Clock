@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Clock</title>
+    <link rel="stylesheet" href="wall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="showTime()">
+  <div class="container">
+    <div class="clock"> 
+
+      <div class="hr-hand-wrap" id="hr-hand">
+        <div class="hr-hand">
+          <div class="hand"></div>
+          <!-- <div class="arrow">V</div> -->
+        </div>
+      </div>
+
+      <div class="min-hand-wrap" id="min-hand">
+        <div class="min-hand">
+          <div class="hand"></div>
+          <!-- <div class="arrow">V</div> -->
+        </div>
+      </div>
+
+      <div class="sc-hand-wrap" id="sc-hand">
+        <div class="sc-hand">
+          <div class="hand"></div>
+        </div>
+      </div>
+
+      <span class="hour hour-1">1</span>
+      <span class="hour hour-2">2</span>
+      <span class="hour hour-3">III</span>
+      <span class="hour hour-4">4</span>
+      <span class="hour hour-5">5</span>
+      <span class="hour hour-6">VI</span>
+      <span class="hour hour-7">7</span>
+      <span class="hour hour-8">8</span>
+      <span class="hour hour-9">IX</span>
+      <span class="hour hour-10">10</span>
+      <span class="hour hour-11">11</span>
+      <span class="hour hour-12">XII</span>
+      <span class="brand"><u><i class="fa-light fa-watch">SONATA</i></u></span>
+
+    </div>
+
+    <!-- for digital clock -->
+     <div class="dig-cnt">
+<div class="digital"></div>
+</div>
+
+
+<!-- calander -->
+
+<div class="digital-calendar">
+  <div class="date" id="date"></div>
+</div>
+
+</div>
+    <script src="wall.js"></script>
+</body>
+</html>
