@@ -1,17 +1,17 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
-background-color: #908d8d;
+background-color: #4a4a4a;
 }
 @media(max-width: 520px){
-    body{
-      margin: 15px;
-      margin-right: 15px;
-   width:100%;
-   height:auto;
-   padding: 10px;
-   font-size: small;
-   background-color: #9a9a9ae3;
-  }}
+  body{
+margin: 15px;
+margin-right: 15px;
+width:100%;
+height:auto;
+padding: 10px;
+font-size: small;
+background-color: #9a9a9ae3;
+}}
 .container{
   width: 500px;
   height: 584px;
@@ -19,7 +19,7 @@ background-color: #908d8d;
   border: 20px sodid blueviolet;
   margin: 0 auto;
   position: relative;
-   box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.87),
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.87),
   10px 10px 70px rgba(0, 0, 0, 0.25),
   inset 5px 5px 10px rgba(0, 0, 0, 0.5),
   inset 5px 5px 20px rgba(0, 0, 0, 0.2),
@@ -29,10 +29,10 @@ background-color: #908d8d;
   border-radius: 20px;
   border-top-left-radius: 225px;
   border-top-right-radius: 225px;
- 
-  /* display: flex;
   justify-content: center;
   align-items: center;
+ 
+  /* display: flex;
   flex-direction: column; */
 } 
 
@@ -71,7 +71,7 @@ background-color: #908d8d;
     position:relative;
     font-size: 30px;
     font-weight: bold;
-    color: #7f8183;
+    color: #5b5959;
     top: -60px;
 
 }
@@ -85,6 +85,7 @@ background-color: #908d8d;
 }
 
 .hour-3{
+  color:rgb(1, 255, 247);
   top: 162px;
   right:29px;
 }
@@ -98,6 +99,7 @@ background-color: #908d8d;
 }
 
 .hour-6{
+  color:rgb(1, 255, 247);
   top: 322px;
   right:184pxpx;
   }
@@ -110,6 +112,7 @@ background-color: #908d8d;
     right: 319px;
   }
   .hour-9{
+    color:rgb(1, 255, 247);
     top: 160px;
     left: 24px;
   }
@@ -122,6 +125,7 @@ background-color: #908d8d;
     right: 257px;
   }
   .hour-12{
+    color:rgb(1, 255, 247);
     top: 5px;
     right: 180px;
   }
@@ -149,17 +153,6 @@ background-color: #908d8d;
 
 }
 
-
-.min-hand .arrow{
-  font-size: 2px;
-  font-weight: bold;
-  color: #fee800;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 95px;
-  top: -8px;
-}
-
 .hr-hand-wrap{
  width: 100px;
   height: 100px;
@@ -183,18 +176,6 @@ position: relative;
   top: -8px;
 
 }
-
-
-.hr-hand .arrow{
-  font-size: 17px;
-  font-weight: bold;
-  color: #f60707;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 95px;
-  top: -10px;
-}
-
 
 .sc-hand-wrap{
   width:200px;
@@ -220,21 +201,9 @@ position: relative;
 }
 
 
-.sc-hand .arrow{
-    font-size: 0px;
-    font-weight: bold;
-    color: #04fc43;
-    transform: rotate(180deg);
-    position: absolute;
-    left: 95px;
-    top: -10px;
-}
-
-
 /* for digital clock */
 
 .digital{
-  /* background-color: #aeecf1; */
   color:#afcae2;
   position: relative;
   font-size: 50px;
@@ -334,4 +303,3 @@ position: relative;
   top:-354px;
   left:399px;
 }
-
