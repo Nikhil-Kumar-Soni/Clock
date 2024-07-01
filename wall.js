@@ -22,14 +22,14 @@ var dt = new Date();
 var h = new Date().getHours();
 var m = new Date().getMinutes();
 var s = new Date().getSeconds();
-var session = "PM";
+var session = "AM";
 
 if(h > 12){
   h = h - 12;
 }
 
 if(h <= 12){
-  session = "AM";
+  session = "PM";
 }
 
 h = h < 10 ? "0"+ h : h;
