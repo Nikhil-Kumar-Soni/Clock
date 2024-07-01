@@ -49,7 +49,51 @@ function updateTimeAndDate() {
 
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const dateString = now.toLocaleDateString('en-US', options);
- 
+
+  
+// for weather
+
+document.addEventListener('DOMContentLoaded', () => {
+  const weatherDiv = document.getElementById('weather');
+
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+      weatherDiv.innerHTML = '<p>Geolocation is not supported by this browser.</p>';
+  }
+
+  function success(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      // Mock weather data based on coordinates
+      const weatherData = getWeatherData(latitude, longitude);
+
+      weatherDiv.innerHTML = `
+          <p class="weather-temp">${ weatherData.temperature}°C</p>
+          <img src="icons/${weatherData.icon}.png" alt="${weatherData.condition}" class="weather-icon">`;
+  }
+
+  function error() {
+      weatherDiv.innerHTML = '<p></p>';
+  }
+
+  function getWeatherData(lat, lon) {
+      // Simple mock weather function based on latitude
+      const conditions = [
+          { condition: 'Haze', icon: 'fa-light fa-clouds'},
+          { condition: 'Sunny', icon: 'fa-thin fa-sun'},
+          { condition: 'Rainy', icon: 'fa-thin fa-cloud-showers-heavy' },
+          { condition: 'Winter', icon: 'fa-duotone fa-snowflake' },
+          { condition: 'Shower', icon: 'fa-light fa-cloud-showers-water' },
+      ];
+      const randomIndex = Math.floor(Math.random() * conditions.length);
+      const temperature = (Math.random() * 20 + 10).toFixed(2); // Mock temperature between 10°C and 30°C
+
+      return { ...conditions[randomIndex], temperature };
+  }
+});
+
 
   dateElement.textContent = dateString;
 }
