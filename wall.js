@@ -18,7 +18,7 @@ setInterval(
 // for digital clock
 
 function showTime(){
-var d = new Date();
+var dt = new Date();
 var h = new Date().getHours();
 var m = new Date().getMinutes();
 var s = new Date().getSeconds();
@@ -28,7 +28,7 @@ if(h > 12){
   h = h - 12;
 }
 
-if(h >= 12){
+if(h <= 12){
   session = "AM";
 }
 
@@ -49,8 +49,14 @@ function updateTimeAndDate() {
 
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const dateString = now.toLocaleDateString('en-US', options);
+ 
 
-  
+  dateElement.textContent = dateString;
+}
+
+setInterval(updateTimeAndDate, 1000);
+updateTimeAndDate();
+
 // for weather
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -93,10 +99,3 @@ document.addEventListener('DOMContentLoaded', () => {
       return { ...conditions[randomIndex], temperature };
   }
 });
-
-
-  dateElement.textContent = dateString;
-}
-
-setInterval(updateTimeAndDate, 1000);
-updateTimeAndDate();
