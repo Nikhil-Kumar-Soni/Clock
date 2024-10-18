@@ -1,0 +1,276 @@
+@media(max-width: 450px){
+  body{
+margin: 10px;
+margin-right: 10px;
+/* width:100%; */
+/* height:auto; */
+/* padding: 10px; */
+font-size: small;
+/* background-color: #4f1c1ce3; */
+}
+
+.container{
+  width: 380px;
+  height: 530px;
+  border-radius: 50%;
+  border: 20px sodid blueviolet;
+  margin: 0px auto;
+  position: relative;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.87), 10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  background: rgb(56, 56, 56);
+  min-height: 500px;
+  border-radius: 20px;
+  border-top-left-radius: 225px;
+  border-top-right-radius: 225px;
+} 
+.clock{
+ 
+  position: relative;
+  width: 350px;
+  height: 380px;
+  background: #2f363e;
+  border-radius: 50%;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75), 10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+} 
+.clock::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #706a6a;
+  border: 3px solid #b7f8fb;
+  border-radius: 50px;
+  z-index: 10000;
+}  
+
+.hour{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e5fac2;
+}
+.brand{
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color:  #4b0000;
+  bottom: 70px;
+  right: 90px;
+}
+
+.hour-1{
+top: -142px;
+left: 236px;
+}
+.hour-2{
+        top: -76px;
+        left: 275px;
+}
+.hour-3{
+  color:rgb(1, 255, 247);
+  left: 276px;
+  top: 1px;
+}
+.hour-4{
+  top: 80px;
+  /* bottom: 22px; */
+  left: 240px;
+}
+.hour-5{
+  top: 143px;
+  /* bottom: 22px; */
+  left: 174px;
+}
+.hour-6{
+  color: rgb(1, 255, 247);
+  top: 173px;
+  left: 82px;
+  }
+  .hour-7{ 
+    right: 12px;
+    top: 143px;
+  }
+  .hour-8{
+    right: 80px;
+    top: 80px;
+  }
+  .hour-9{
+ color:rgb(1, 255, 247);
+  top: 1px;
+  left: -110px;
+  }
+  .hour-10{
+    right: 110px;
+    top: -75px;
+  }
+  .hour-11{
+    right: 85px;
+    top: -137px;
+  }
+  .hour-12{
+    color:rgb(1, 255, 247);
+    right: 22px;
+    top: -170px;
+  }
+
+  .min-hand-wrap{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 107px;
+  }
+.min-hand{
+  position: relative;
+}
+.min-hand .hand{
+width: 2px;
+height: 100px;
+background-color: #fee800;
+position: absolute;
+left: 68px;
+top: -35px;
+}
+.hr-hand-wrap{
+  width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   position: absolute;
+   top: 138px;
+   left: 125px;
+ } 
+ .hr-hand{
+ position: relative;
+ }
+ .hr-hand .hand{
+   width: 5px;
+   height: 58px;
+   background-color: #f60707;
+   position: absolute;
+   left: 48px;
+   top: -15px;
+ }
+ .sc-hand-wrap{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 86px;
+  left: 80px;
+}
+.sc-hand{
+position: relative;
+}
+.sc-hand .hand{
+  width: 0.1px;
+  height: 120px;
+  background-color: #04fc43;
+  position: absolute;
+  top:-13px;
+  left:96px;
+}
+/* for digital clock */
+  
+.digital{
+  color:#afcae2;
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dig-cnt{
+  position: relative;
+  /* top: -22px;
+  right: 38px;
+  left: 0px; */
+  font-weight: 300;
+  font-size: 2em;
+margin-top: 25px;
+  /* display: flex; */
+  padding: 10px 20px;
+  border: 2px solid rgba(0 , 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+  inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+  /* for calander */
+  
+  
+  .digital-calendar {
+    display: flex;
+    /* position: relative; */
+      /* top: -57px;
+    left: 0px; */
+    border-radius: 21px;
+    box-shadow: 5px 5px 10px rgba(16, 16, 16, 0.5), inset 5px 5px 20px
+     rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 380px;
+    height: 72px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  
+}
+.date {
+  font-size:26px;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+  color: #afcae2;
+  position: relative;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#weather {
+  /* display: flex;
+  position: relative; */
+  margin-top: 20px;
+}
+
+.weather-temp{
+  font-size: 7px;
+  position: relative;
+  width: 65px;
+  height: 35px;
+  box-shadow: 5px 5px 10px rgba(16, 16, 16, 0.5), inset 5px 5px 20px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  color: #afcae2;
+  font-weight: bold;
+  border-radius: 9px;
+  align-items: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+top: -255px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.weather-icon {
+  font-size: 7px;
+  position: relative;
+  width: 65px;
+  height: 35px;
+  box-shadow: 5px 5px 10px rgba(16, 16, 16, 0.5),
+  inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  color: #afcae2;
+  font-weight: bold;
+  border-radius: 9px;
+  align-items: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ top:-285px;
+  left:305px;
+}  
+}
